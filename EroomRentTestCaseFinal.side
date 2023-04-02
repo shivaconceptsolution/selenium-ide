@@ -1,0 +1,407 @@
+{
+  "id": "b68fe4cf-460f-453f-8704-98cec53b7a2d",
+  "version": "2.0",
+  "name": "EroomRentTestCase",
+  "url": "https://shivaconceptsolution.com",
+  "tests": [{
+    "id": "414a88f7-e35c-41e5-93e4-2c3ac34b0809",
+    "name": "CheckFrontPage",
+    "commands": [{
+      "id": "f7814020-8bcf-41d8-8ec6-660ebdd0c961",
+      "comment": "",
+      "command": "open",
+      "target": "https://eroomrent.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe28634d-957d-49ce-af06-619f7c53382d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1324x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd7a2fc2-6563-4dfb-bd5f-da6a43d10f0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col > .input-group",
+      "targets": [
+        ["css=.col > .input-group", "css:finder"],
+        ["xpath=//form/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36f7144c-208b-45bd-8ad1-af029cec363e",
+      "comment": "",
+      "command": "click",
+      "target": "id=cat",
+      "targets": [
+        ["id=cat", "id"],
+        ["name=ddlcat", "name"],
+        ["css=#cat", "css:finder"],
+        ["xpath=//select[@id='cat']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a0d7ae6-9a92-4e7d-a20f-fe9506ec5506",
+      "comment": "",
+      "command": "select",
+      "target": "id=cat",
+      "targets": [],
+      "value": "label=Room"
+    }, {
+      "id": "1ee0315f-5a4a-407b-aefa-223c0d85cc97",
+      "comment": "",
+      "command": "click",
+      "target": "id=subcat",
+      "targets": [
+        ["id=subcat", "id"],
+        ["name=ddlsubcat", "name"],
+        ["css=#subcat", "css:finder"],
+        ["xpath=//select[@id='subcat']", "xpath:attributes"],
+        ["xpath=//div[@id='res']/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80ee9918-ca4b-4f46-80cb-54fa0be45590",
+      "comment": "",
+      "command": "select",
+      "target": "id=subcat",
+      "targets": [],
+      "value": "label=1 RK"
+    }, {
+      "id": "c1d2be17-ae78-4257-a040-a0133c8a9509",
+      "comment": "",
+      "command": "click",
+      "target": "id=location",
+      "targets": [
+        ["id=location", "id"],
+        ["name=ddllocation", "name"],
+        ["css=#location", "css:finder"],
+        ["xpath=//select[@id='location']", "xpath:attributes"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e1e4c65-ae0c-4724-a655-7e2b6252bf22",
+      "comment": "",
+      "command": "select",
+      "target": "id=location",
+      "targets": [],
+      "value": "label=Bhawarkua Bholaram Gate"
+    }, {
+      "id": "1d3b05f9-794b-43c7-9f70-0c3ebcf3b407",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-one",
+      "targets": [
+        ["css=.btn-one", "css:finder"],
+        ["xpath=//input[@value='Search Property']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bc990e1-515c-4b63-b87a-f2d2308ba46a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Click To Booking",
+      "targets": [
+        ["linkText=Click To Booking", "linkText"],
+        ["css=.row:nth-child(1) > .row a", "css:finder"],
+        ["xpath=//a[contains(text(),'Click To Booking')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'login.php?rid=243')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Click To Booking')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "871af232-c115-47a1-8123-5f1a97e8a26c",
+    "name": "TestCaseScript2",
+    "commands": [{
+      "id": "ea8132f3-a106-4ce6-b907-e5c91521a387",
+      "comment": "",
+      "command": "open",
+      "target": "https://eroomrent.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48c73f5f-e994-42c7-b251-c66f60b02199",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1324x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ec0a49e-eec9-43b2-8676-6b0b420d91b5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login Here",
+      "targets": [
+        ["linkText=Login Here", "linkText"],
+        ["css=.nav-item:nth-child(3) li:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login Here')]", "xpath:link"],
+        ["xpath=//div[@id='collapsibleNavbar']/ul/li[3]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'ownerlogin.php')])[2]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login Here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c305bf2b-c8c8-4909-bd11-7a20369bf808",
+      "comment": "",
+      "command": "click",
+      "target": "name=txtEmail",
+      "targets": [
+        ["name=txtEmail", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='txtEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36c6e225-725d-48a2-902f-f4fcd84e3bdb",
+      "comment": "",
+      "command": "type",
+      "target": "name=txtEmail",
+      "targets": [
+        ["name=txtEmail", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='txtEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "nitinjatav@gmail.com"
+    }, {
+      "id": "b736cd31-0f8c-4a25-af5c-f908a150fe08",
+      "comment": "",
+      "command": "click",
+      "target": "name=txtPassword",
+      "targets": [
+        ["name=txtPassword", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='txtPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c62a065-d90c-4450-bf96-1f60f0a99b87",
+      "comment": "",
+      "command": "type",
+      "target": "name=txtPassword",
+      "targets": [
+        ["name=txtPassword", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='txtPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "b7067375-827b-46e5-92de-a438d7983095",
+      "comment": "",
+      "command": "click",
+      "target": "name=btnsubmit",
+      "targets": [
+        ["name=btnsubmit", "name"],
+        ["css=.btn-one", "css:finder"],
+        ["xpath=//input[@name='btnsubmit']", "xpath:attributes"],
+        ["xpath=//center/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "040902dc-53a2-44e3-b496-2d81533862ea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View Room",
+      "targets": [
+        ["linkText=View Room", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'View Room')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'viewroom.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View Room')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43ab7c0e-739c-4e33-9bc3-460d3fac8ef9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'logout.php')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dba8dbf-f2e5-46f2-be8f-720b56311121",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b26cb305-5460-49a8-a52a-75ec8c6837e5",
+    "name": "LoginTestCase",
+    "commands": [{
+      "id": "052d8a44-45bd-42d5-a8c4-1956014b0816",
+      "comment": "",
+      "command": "open",
+      "target": "/ownerlogin.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0d39a36-4072-43a1-a9b9-3b89d668ee7b",
+      "comment": "",
+      "command": "type",
+      "target": "name=txtEmail",
+      "targets": [],
+      "value": "nitinjatav@gmail.com"
+    }, {
+      "id": "bb148f19-d1e2-487d-bebf-7bd8f024e7dd",
+      "comment": "",
+      "command": "type",
+      "target": "name=txtPassword",
+      "targets": [],
+      "value": "12345678"
+    }, {
+      "id": "f19e7d4f-52b5-42e5-96fd-f6780ab35bc7",
+      "comment": "",
+      "command": "click",
+      "target": "name=btnsubmit",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8c66acf1-09d5-4e7c-8e1e-225a40a4ca72",
+    "name": "CreateTestScript",
+    "commands": [{
+      "id": "2150a710-dbad-4c17-9615-d5fd00f5be68",
+      "comment": "",
+      "command": "open",
+      "target": "/test.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d3a3d41-133f-4f99-9b94-320e5a187096",
+      "comment": "",
+      "command": "type",
+      "target": "id=txt1",
+      "targets": [],
+      "value": "testbyid"
+    }, {
+      "id": "bbf84e70-f9cb-48f4-ae99-3f650b685593",
+      "comment": "",
+      "command": "type",
+      "target": "name=txt2",
+      "targets": [],
+      "value": "testbyname"
+    }, {
+      "id": "0048fcf9-9aea-4a2b-8c5e-cb40f76bb9ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=txt3",
+      "targets": [],
+      "value": "10-10-2023"
+    }, {
+      "id": "b89fae24-88eb-4e42-897e-0fe6887faf95",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[type=date]",
+      "targets": [],
+      "value": "2023-10-10"
+    }, {
+      "id": "5af0a689-60e1-4f97-a04f-f62e05030c7f",
+      "comment": "",
+      "command": "type",
+      "target": "id=txt4",
+      "targets": [],
+      "value": "1234"
+    }, {
+      "id": "0a1f181a-812a-4166-8d64-d4ff705fc949",
+      "comment": "",
+      "command": "type",
+      "target": "css=input.abc",
+      "targets": [],
+      "value": "test class locator"
+    }, {
+      "id": "f02fc167-434a-41c6-81fd-6a7b4f740855",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[value=click]",
+      "targets": [],
+      "value": "locate by css attribute"
+    }, {
+      "id": "0f16ab84-a56c-4630-9c07-c4a5a8b0e64f",
+      "comment": "",
+      "command": "type",
+      "target": "css=input.abc[value=hello]",
+      "targets": [],
+      "value": "Tag class attribute"
+    }, {
+      "id": "249e0d57-0d06-43bf-bb0a-3870630b98f7",
+      "comment": "",
+      "command": "type",
+      "target": "css=input.abc[value=hi]",
+      "targets": [],
+      "value": "Tag class and attribute"
+    }, {
+      "id": "46b75566-ed19-41f2-82a4-9c582a496a5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=input[value=FeMale]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "268d6bde-a7b4-49c1-92a0-b9e889bccf0a",
+      "comment": "",
+      "command": "click",
+      "target": "name=chk2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2717cee7-5934-4705-b1ed-61e7e16d691d",
+      "comment": "",
+      "command": "select",
+      "target": "name=c",
+      "targets": [],
+      "value": "label=TESTNG"
+    }, {
+      "id": "b0356657-fcd7-4ecb-8c45-48850dc27984",
+      "comment": "",
+      "command": "addSelection",
+      "target": "name=c[]",
+      "targets": [],
+      "value": "Web Driver"
+    }, {
+      "id": "41c0743b-ac10-48e7-8509-90c52cc80410",
+      "comment": "",
+      "command": "addSelection",
+      "target": "name=c[]",
+      "targets": [],
+      "value": "TESTNG"
+    }, {
+      "id": "48a7d275-33d6-4c1b-8ac9-159a0ffb5889",
+      "comment": "",
+      "command": "type",
+      "target": "//html/body/input[18]",
+      "targets": [],
+      "value": "XPATH LOCATOR"
+    }]
+  }],
+  "suites": [{
+    "id": "dfb58790-b0ef-464e-9445-82a53bef978e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["414a88f7-e35c-41e5-93e4-2c3ac34b0809"]
+  }],
+  "urls": ["https://eroomrent.in/", "https://shivaconceptsolution.com/"],
+  "plugins": []
+}
